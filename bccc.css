@@ -1,0 +1,403 @@
+#bc-chat-container {
+	position:fixed;
+	z-index: 3141593;
+	font-family: 'Bariol-Regular', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	text-transform: none;
+	background-color: transparent;
+}
+.bc-frame-content-container {
+	border:none;
+	display: block;
+	visibility: visible;
+}
+.bc-frame-header {
+	vertical-align: middle;
+	padding: 0.5em;
+	height: 1.5em;
+	line-height: 1.5em;
+	cursor: move;
+	position: relative;
+	font-size: 1em;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	width: auto;
+}
+.bc-frame-header.bc-frame-header-landscape {
+	height: 1.3em;
+	height: 1.36em\9;
+	line-height: 1.3em;
+}
+.bc-frame-header:after {
+	border-left: 0.5em solid transparent;
+	border-right: 0.5em solid transparent;
+	border-top: 0.5em solid #36245F;
+	bottom: -0.45em;
+	content: "";
+	height: 0;
+	position: absolute;
+	left: 50%;
+	margin-left: -0.5em;
+	width: 0;
+	z-index: 3141595;
+}
+/* IE8 needs this reset */
+.bc-frame-body .bc-frame-header:after {
+	background: transparent;
+	padding: 0px;
+}
+.bc-frame-title {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	background: transparent;
+	position: absolute;
+	top: 0;
+	left: 2.4em;
+	right: 2.4em;
+	text-align: center;
+	border-collapse: collapse;
+	display: inline-block;
+	vertical-align: middle;
+	color: #FFFFFF;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: auto;
+	height: 2.5em;
+	line-height: 2.5em;
+	font-size: 1em;
+}
+.bc-headbtn {
+	border-collapse: collapse;
+	vertical-align: middle;
+	text-align: center;
+	border: none;
+	font-size: 2em;
+	font-weight: bold;
+	color: white;
+	width: 1.25em;
+	height: 1.25em;
+	line-height: 0.75em;
+	display: inline-block;
+	cursor: pointer;
+	padding: 0; /*required to fix large zoom levels*/
+	outline: none;
+	position: absolute;
+	top: 0.0em;
+	right: 0.0em;
+	background: transparent;
+}
+.bc-frame-header.bc-frame-header-landscape .bc-headbtn {
+	height: 1.6em;
+	width: 1.6em;
+	line-height: 1em;
+	top: 0.0em;
+	right: 0.0em;
+	font-size: 1.5em;
+}
+.bc-frame-header.bc-frame-header-landscape .bc-headbtn.bc-headbtn-menulist {
+	right: 0.0em;
+	left: auto;
+}
+.bc-frame-header.bc-frame-header-landscape .bc-headbtn.bc-headbtn-minimize {
+	left: 0.0em;
+	right: auto;
+}
+.bc-frame-header.bc-frame-header-landscape .bc-frame-title {
+	height: 2.3em;
+	line-height: 2.3em;
+}
+.bc-headmenu-wrap {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	cursor: auto;
+	z-index: 3141594;
+	display: inline-block;
+	background: rgb(35, 35, 35);
+	background-color: rgba(35, 35, 35,0.65);
+	overflow: hidden;
+	width: 100%;
+	font-size: 1em;
+}
+.bc-headmenu-wrap > div {
+	width: auto;
+}
+.bc-headmenu::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 0.5em;
+}
+.bc-headmenu::-webkit-scrollbar-thumb {
+    border-radius: 0.25em;
+    background-color: #4B3B72;
+    -webkit-box-shadow: 0 0 0.1em rgba(255,255,255,.5);
+}
+.bc-headmenu {
+	overflow: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: auto;
+	top: auto;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	background: rgb(35, 35, 35);
+	background-color: rgb(35, 35, 35);
+	border: none;
+	display: inline-block;
+	padding: 0.6em;
+	height: 100%;
+	font-size: 1em;
+	max-width: 100%;
+}
+.bc-headmenu-item {
+	color: white;
+	padding: 0.5em 0.5em 1em 0.5em;
+	font-size: 1em;
+	cursor: pointer;
+}
+.bc-headbtn-icon {
+	margin-bottom: 0.2em;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1em;
+}
+
+.bc-headbtn-label {
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
+	color: white;
+}
+.bc-frame-body {
+	width: 100%;
+	height: 100%;
+	display:inline-block;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+.bc-frame-header:last-child {
+	/*margin-top: -5px;
+	margin-top: -4px\9; //IE is strange, as always*/
+}
+.bc-frame-header {
+	background: #604dd5;
+}
+.bc-loading-background {
+	background: rgb(35, 35, 35);
+	background: rgba(35, 35, 35, 0.55);
+}
+.bc-draghelper {
+	opacity: 0.001; 
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.bc-hidden {
+	visibility: hidden;
+}
+.bc-minimize-container {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	left: auto;
+	top: auto;
+	width: 100%;
+	height: 100%;
+	display: none;
+	font-size: 1em;
+}
+.bc-minimize-state-container {
+	width: 6em;
+	height: 6em;
+	cursor: pointer;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	left: auto;
+	top: auto;
+	padding: 0.7em;
+	font-size: 1em;
+}
+.bc-minimize-state {
+	width: 6em;
+	height: 6em;
+	position: absolute;
+	bottom: 0.7em;
+	right: 0.7em;
+	top: auto;
+	left: auto;
+	font-size: 1em;
+}
+.bc-headbtn.bc-headbtn-menulist {
+	right: 0.0em;
+	left: auto;
+	background: url(https://images.boldchat.com/images/floating/menu.png) no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	/* IE */
+	background: #36245F\9;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://images.boldchat.com/images/floating/menu.png", sizingMethod="scale");
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://images.boldchat.com/images/floating/menu.png", sizingMethod="scale")";
+}
+.bc-headbtn.bc-headbtn-minimize {
+	left: 0.0em;
+	right: auto;
+	background: url(https://images.boldchat.com/images/floating/minimize-arrow.png) no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	/* IE */
+	background: #36245F\9;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://images.boldchat.com/images/floating/minimize-arrow.png", sizingMethod="scale");
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://images.boldchat.com/images/floating/minimize-arrow.png", sizingMethod="scale")";
+}
+.bc-headbtn-minimize-icon {
+	width: 2em;
+	height: 2em;
+	background: url(https://images.boldchat.com/images/floating/minimize_small.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	/* IE */
+	background: none\9;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://images.boldchat.com/images/floating/minimize_small.png", sizingMethod="scale");
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://images.boldchat.com/images/floating/minimize_small.png", sizingMethod="scale")";
+}
+.bc-headbtn-end-icon,
+.bc-headbtn-close-icon {
+	width: 2em;
+	height: 2.01em;
+	background: url(https://images.boldchat.com/images/floating/close_small.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	/* IE */
+	background: none\9;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://images.boldchat.com/images/floating/close_small.png",sizingMethod="scale");
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://images.boldchat.com/images/floating/close_small.png",sizingMethod="scale")";
+}
+.bc-minimize-state-idle {
+	background: url(https://images.boldchat.com/images/floating/minimized.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	/* IE */
+	background: none\9;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://images.boldchat.com/images/floating/minimized.png",sizingMethod="scale");
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://images.boldchat.com/images/floating/minimized.png",sizingMethod="scale")";
+}
+.bc-minimize-state-ended {
+	background: url("https://images.boldchat.com/images/floating/minimized-ended.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	/* IE */
+	background: none\9;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://images.boldchat.com/images/floating/minimized-ended.png",sizingMethod="scale");
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://images.boldchat.com/images/floating/minimized-ended.png",sizingMethod="scale")";
+}
+.bc-minimize-state-message {
+	background: url(https://images.boldchat.com/images/floating/minimized-message.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	/* IE */
+	background: none\9;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://images.boldchat.com/images/floating/minimized-message.png",sizingMethod="scale");
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://images.boldchat.com/images/floating/minimized-message.png",sizingMethod="scale")";
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.bc-headbtn.bc-headbtn-menulist {
+		background: url(https://images.boldchat.com/images/floating/menu.png) no-repeat;
+		background-position: center center;
+		background-size: 100% 100%;
+	}
+	.bc-headbtn.bc-headbtn-minimize {
+		background: url(https://images.boldchat.com/images/floating/minimize-arrow.png) no-repeat;
+		background-position: center center;
+		background-size: 100% 100%;
+	}
+	.bc-headbtn-minimize-icon {
+		background: url(https://images.boldchat.com/images/floating/minimize_small.png);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	.bc-headbtn-end-icon,
+	.bc-headbtn-close-icon {
+		background: url(https://images.boldchat.com/images/floating/close_small.png);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	.bc-minimize-state-idle {
+		background: url(https://images.boldchat.com/images/floating/minimized.png);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	.bc-minimize-state-ended {
+		background: url("https://images.boldchat.com/images/floating/minimized-ended.png");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	.bc-minimize-state-message {
+		background: url(https://images.boldchat.com/images/floating/minimized-message.png);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+}
+.bc-headbtn-email-icon {
+    width: 2em;
+    height: 2em;
+    background: url(https://images.boldchat.com/images/floating/email.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* IE */
+    background: none\9;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://images.boldchat.com/images/floating/email.png", sizingMethod="scale");
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://images.boldchat.com/images/floating/email.png", sizingMethod="scale")";
+}
+					
+#bc-ios-keyboard-detect {
+    position: fixed;
+    z-index: 0;
+    width: 1px;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+
+.bc-iphone-no-scroll {
+	overflow: hidden;
+	height: 100%;
+}
+
+/* FILE TRANSFER */
+
+.bc-headbtn-send-file-icon {
+	width: 2em;
+	height: 2.01em;
+	background: url(https://images.boldchat.com/images/floating/send-file.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	/* IE */
+	background: none\9;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://images.boldchat.com/images/floating/send-file.png",sizingMethod="scale");
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://images.boldchat.com/images/floating/send-file.png",sizingMethod="scale")";
+}
+.bc-headbtn-disabled {
+	opacity: 0.5;
+	cursor: default;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.bc-headbtn-send-file-icon {
+		background: url(https://images.boldchat.com/images/floating/send-file.png);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+}
