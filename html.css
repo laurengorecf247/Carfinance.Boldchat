@@ -127,7 +127,7 @@ body {
 	position: absolute;
 	bottom: 0px;
 	border: none;
-	font-family: sans-serif;
+	font-family: 'Bariol-Regular', Helvetica, Arial, sans-serif;
 }
 .android23 #bc-message-input-container {
 	position: relative
@@ -163,7 +163,7 @@ body {
 	line-height: 1.3em;
 	padding: 0.6em 0.3em;
 	margin: auto;
-	font-family: sans-serif;
+	font-family: 'Bariol-Regular', Helvetica, Arial, sans-serif;
 	-webkit-border-radius: 0px;
 }
 .bc-operator-avatar {
@@ -358,7 +358,8 @@ body a:hover {
 .bc-input-container label {
 	color: white;
 	font-weight: 100;
-	font-size: 1.1em;
+	font-size: 1.4em;
+	font-family: 'Bariol-Regular', Helvetica, Arial, sans-serif;
 	margin: 0 0 0.5em 0;
 	width: 100%;
 	padding: 0.5em;
@@ -370,10 +371,10 @@ body a:hover {
 	box-sizing: border-box;
 }
 .bc-required-message {
-	color: #C9C9C9;
+	color: #FFFFFF;
 	font-weight: 100;
 	font-size: 0.9em;
-	margin: -0.8em 0 0.5em 0;
+	margin: 1em 0 0.5em 0;
 	padding-left: 0.5em;
 }
 .bc-available {
@@ -440,7 +441,7 @@ body a:hover {
 	color: white;
 	resize: none;
 	overflow: auto;
-	font-family: sans-serif;
+	font-family: 'Bariol-Regular', Helvetica, Arial, sans-serif;
 	font-size: 1.45em;
 	line-height: 1.44em;
 	appearance: none;
@@ -539,7 +540,8 @@ body a:hover {
 	font-weight: 100;
 	padding: 0.7em;
 	outline: none;
-	-webkit-border-radius: 0px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
 }
 #bc-rate-container .bc-input-container:last-child {
 	margin-bottom: 1.3em;
