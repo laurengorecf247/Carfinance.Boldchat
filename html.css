@@ -461,13 +461,13 @@ body a:hover {
 .notFirefoxInAndroid .bc-input-container select,
 .notFirefoxInAndroid .bc-input-container textarea {
 	border: none;	
-	border-bottom: 0.09em solid #6F6F6F;
+	border-bottom: 0.09em solid #FFFFFF;
 }
 .bc-input-container select {
 	line-height: 1.44em;
 }
 .bc-input-container select.empty {
-	color: #666666;
+	color: #FFFFFF;
 	padding-left: 0;
 	line-height: 1.44em;
 }
@@ -476,7 +476,7 @@ body a:hover {
 	font-size: 0.714em
 }
 .bc-input-container select option.empty {
-	color: #666666
+	color: #FFFFFF
 }
 .bc-placeholder,
 .bc-input-container input[type="text"].bc-placeholder,
@@ -484,20 +484,20 @@ body a:hover {
 .bc-input-container input[type="tel"].bc-placeholder,
 .bc-input-container select.bc-placeholder,
 .bc-input-container textarea.bc-placeholder {
-	color: #666666;
+	color: #FFFFFF;
 }
 .bc-input-container input[type="text"]::-webkit-input-placeholder,
 .bc-input-container input[type="email"]::-webkit-input-placeholder,
 .bc-input-container input[type="tel"]::-webkit-input-placeholder,
 .bc-input-container textarea::-webkit-input-placeholder {
-	color: #666666;
+	color: #FFFFFF;
 	opacity: 1;
 }
 .bc-input-container input[type="text"]:-moz-placeholder,
 .bc-input-container input[type="email"]:-moz-placeholder,
 .bc-input-container input[type="tel"]:-moz-placeholder,
 .bc-input-container textarea:-moz-placeholder { /* Firefox 18- */
-	color: #666666;
+	color: #FFFFFF;
 	opacity: 1;
 }
 
@@ -505,7 +505,7 @@ body a:hover {
 .bc-input-container input[type="email"]::-moz-placeholder,
 .bc-input-container input[type="tel"]::-moz-placeholder,
 .bc-input-container textarea::-moz-placeholder { /* Firefox 19+ */
-	color: #666666;
+	color: #FFFFFF;
 	opacity: 1;
 }
 
@@ -513,7 +513,7 @@ body a:hover {
 .bc-input-container input[type="email"]:-ms-input-placeholder,
 .bc-input-container input[type="tel"]:-ms-input-placeholder,
 .bc-input-container textarea:-ms-input-placeholder { /* IE10 */
-	color: #666666;
+	color: #FFFFFF;
 	opacity: 1;
 }
 .bc-input-container label {
@@ -542,6 +542,14 @@ body a:hover {
 	outline: none;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
+}
+#bc-email-form-container .bc-input-container:nth-child(2) {
+	-webkit-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+}
+#bc-email-form-container .bc-input-container:nth-child(4) {
+	-webkit-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
 }
 #bc-rate-container .bc-input-container:first-child {
 	-webkit-border-radius: 4px 4px 0 0;
@@ -729,7 +737,7 @@ x:-moz-any-link {
 .bc-unchecked-radio {
        background: #353535;
        border: 0.1em solid black;
-       color: #666666;
+       color: #FFFFFF;
 }
 .bc-checked-radio {
        background: #4B3B72;
