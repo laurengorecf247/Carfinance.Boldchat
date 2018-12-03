@@ -52,13 +52,13 @@ body {
 }
 .bc-visitor-message:after {
 	position: absolute;
-	bottom: -10px;
+	bottom: -20px;
 	right: 0px;
 	width: 0;
 	height: 0;
 	margin: 0em;
-	border-bottom: 10px solid transparent;
-	border-right: 10px solid #DDE2F6;
+	border-bottom: 20px solid transparent;
+	border-right: 20px solid #DDE2F6;
 	clear: both;
 	display: block;
 	content: "";
@@ -94,10 +94,10 @@ body {
 	border-radius: 4px 4px 4px 0;
 }
 .bc-operator-message:after {
-	bottom: -10px;
+	bottom: -18px;
 	left: 0px;
-	border-bottom: 10px solid transparent;
-	border-left: 10px solid #fff;
+	border-bottom: 18px solid transparent;
+	border-left: 18px solid #fff;
 	width: 0;
 	height: 0;
 	margin: 0em;
@@ -107,10 +107,10 @@ body {
 	position: absolute;
 }
 .bc-operator-message:before {
-	bottom: -12px;
+	bottom: -20px;
 	left: -1px;
-	border-bottom: 12px solid transparent;
-	border-left: 12px solid #E5E5E5;
+	border-bottom: 20px solid transparent;
+	border-left: 20px solid #E5E5E5;
 	width: 0;
 	height: 0;
 	margin: 0em;
