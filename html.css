@@ -47,6 +47,8 @@ body {
 	max-width:80%;
 	clear: both;
 	float: right;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
 }
 .bc-visitor-message:after {
 	position: absolute;
@@ -87,6 +89,9 @@ body {
 	max-width: 80%;
 	clear: both;
 	float: left;
+	border: 1px solid #E5E5E5;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
 }
 .bc-operator-message:after {
 	position: absolute;
