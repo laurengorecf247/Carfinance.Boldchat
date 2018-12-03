@@ -640,9 +640,11 @@ body a:hover {
 	font-size: 1.1em;
 	line-height: 1.3em;
 	padding: 0.54em;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
 }
 #bc-prompt-ok {
-	background: #4B3B72;
+	background: #604DD5;
 }
 #bc-prompt-cancel {
 	background: #FFFFFF;
