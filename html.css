@@ -464,7 +464,7 @@ body a:hover {
 .bc-input-container textarea {
 	width: 100%;
 	background: #FFFFFF;
-	color: white;
+	color: #111111;
 	resize: none;
 	overflow: auto;
 	font-family: 'Bariol-Regular', Helvetica, Arial, sans-serif;
@@ -510,20 +510,20 @@ body a:hover {
 .bc-input-container input[type="tel"].bc-placeholder,
 .bc-input-container select.bc-placeholder,
 .bc-input-container textarea.bc-placeholder {
-	color: #FFFFFF;
+	color: #111111;
 }
 .bc-input-container input[type="text"]::-webkit-input-placeholder,
 .bc-input-container input[type="email"]::-webkit-input-placeholder,
 .bc-input-container input[type="tel"]::-webkit-input-placeholder,
 .bc-input-container textarea::-webkit-input-placeholder {
-	color: #FFFFFF;
+	color: #111111;
 	opacity: 1;
 }
 .bc-input-container input[type="text"]:-moz-placeholder,
 .bc-input-container input[type="email"]:-moz-placeholder,
 .bc-input-container input[type="tel"]:-moz-placeholder,
 .bc-input-container textarea:-moz-placeholder { /* Firefox 18- */
-	color: #FFFFFF;
+	color: #111111;
 	opacity: 1;
 }
 
@@ -531,7 +531,7 @@ body a:hover {
 .bc-input-container input[type="email"]::-moz-placeholder,
 .bc-input-container input[type="tel"]::-moz-placeholder,
 .bc-input-container textarea::-moz-placeholder { /* Firefox 19+ */
-	color: #FFFFFF;
+	color: #111111;
 	opacity: 1;
 }
 
@@ -595,7 +595,7 @@ body a:hover {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	color: #FFFFFF;
+	color: #111111;
 	z-index: 3141593;
 	background: rgb(35, 35, 35);
 	background-color: rgba(35, 35, 35,0.65);
@@ -623,7 +623,7 @@ body a:hover {
 }
 #prompt-text {
 	background: white;
-	color: #FFFFFF;
+	color: #111111;
 	overflow-x: hidden;
 }
 #bc-prompt-input {
