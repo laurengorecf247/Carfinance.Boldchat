@@ -382,7 +382,7 @@ body a:hover {
 .bc-help-message,
 .bc-error-message,
 .bc-input-container label {
-	color: white;
+	color: #111111;
 	font-weight: 100;
 	font-size: 1.4em;
 	font-family: 'Bariol-Regular', Helvetica, Arial, sans-serif;
@@ -397,7 +397,7 @@ body a:hover {
 	box-sizing: border-box;
 }
 .bc-required-message {
-	color: #FFFFFF;
+	color: #111111;
 	font-weight: 100;
 	font-size: 0.9em;
 	margin: 1em 0 0.5em 0;
@@ -408,7 +408,7 @@ body a:hover {
 .bc-unavailable {
 }
 .bc-input-container .bc-input-label {
-	color: white;
+	color: #111111;
 	font-size: 1.3em;
 	margin: 0 0 0.5em 0;
 	padding: 0.5em;
@@ -447,7 +447,7 @@ body a:hover {
 	margin-bottom: 0.0em;
 	width: 100%;
 	padding: 1.4em 0.7em 0 0.7em;
-	background: #FFFFFF;
+	background: #DDE2F6;
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;	/* Firefox, other Gecko */
 	box-sizing: border-box;		 /* Opera/IE 8+ */
