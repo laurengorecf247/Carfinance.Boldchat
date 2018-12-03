@@ -13,10 +13,10 @@ body {
 .bc-page-wrapper {
 	width: 100%;
 	height: 100%;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=4)";
-	filter: alpha(opacity=4);
-	background-color: rgba(100, 100, 100, 0.04);
-	background: rgb(100, 100, 100)\9;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=96)";
+	filter: alpha(opacity=96);
+	background-color: rgba(255, 255, 255, 0.96);
+	background: rgb(255, 255, 255)\9;
 }
 /* reset opacity for children */
 .bc-page-wrapper-scroll {
