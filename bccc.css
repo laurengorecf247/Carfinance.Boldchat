@@ -32,19 +32,6 @@
 	height: 1.36em\9;
 	line-height: 1.3em;
 }
-.bc-frame-header:after {
-	border-left: 0.5em solid transparent;
-	border-right: 0.5em solid transparent;
-	border-top: 0.5em solid #36245F;
-	bottom: -0.45em;
-	content: "";
-	height: 0;
-	position: absolute;
-	left: 50%;
-	margin-left: -0.5em;
-	width: 0;
-	z-index: 3141595;
-}
 /* IE8 needs this reset */
 .bc-frame-body .bc-frame-header:after {
 	background: transparent;
