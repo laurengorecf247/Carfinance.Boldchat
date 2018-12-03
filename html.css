@@ -47,18 +47,18 @@ body {
 	max-width:80%;
 	clear: both;
 	float: right;
-	-webkit-border-radius: 4px;
-	border-radius: 4px;
+	-webkit-border-radius: 4px 4px 0 4px;
+	border-radius: 4px 4px 0 4px;
 }
 .bc-visitor-message:after {
 	position: absolute;
-	bottom: -0.9em;
+	bottom: -10px;
 	right: 0px;
 	width: 0;
 	height: 0;
 	margin: 0em;
-	border-bottom: 1em solid transparent;
-	border-right: 1em solid #DDE2F6;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid #DDE2F6;
 	clear: both;
 	display: block;
 	content: "";
@@ -90,21 +90,34 @@ body {
 	clear: both;
 	float: left;
 	border: 1px solid #E5E5E5;
-	-webkit-border-radius: 4px;
-	border-radius: 4px;
+	-webkit-border-radius: 4px 4px 4px 0;
+	border-radius: 4px 4px 4px 0;
 }
 .bc-operator-message:after {
-	position: absolute;
-	bottom: -0.9em;
+	bottom: -10px;
 	left: 0px;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid #fff;
 	width: 0;
 	height: 0;
 	margin: 0em;
-	border-bottom: 1em solid transparent;
-	border-left: 1em solid #FFFFFF;
 	clear: both;
 	display: block;
 	content: "";
+	position: absolute;
+}
+.bc-operator-message:before {
+	bottom: -12px;
+	left: -1px;
+	border-bottom: 12px solid transparent;
+	border-left: 12px solid #E5E5E5;
+	width: 0;
+	height: 0;
+	margin: 0em;
+	clear: both;
+	display: block;
+	content: "";
+	position: absolute;
 }
 .bc-system-message {
 	background: #FFFFFF;
