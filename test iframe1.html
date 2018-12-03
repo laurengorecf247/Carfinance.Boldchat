@@ -1,0 +1,149 @@
+<html style="font-size: 14px;"><head>
+        <style>
+            @font-face {
+        font-family: "Bariol-Bold";
+        src: url("Bariol_Bold.woff") format('woff');
+    }
+    @font-face {
+        font-family: "Bariol-Regular";
+        src: url("Bariol.woff") format('woff');
+    }
+            </style>
+            <link rel="stylesheet" type="text/css" href="html.css"> 
+            <link rel="stylesheet" type="text/css" href="bccc.css"> 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Chat</title>
+<div class="bc-page-wrapper">
+			<div class="bc-page-wrapper-scroll">
+				<form id="chatForm" name="myform" method="post" action="https://livechat.boldchat.com/aid/883182194752854976/mobilechat/visitor.jsp#hostUrl=https%3A%2F%2Flocalhost%3A44395%2F&amp;issrp=false" style="margin: 0;">
+					<input type="hidden" name="Csrf-Token" value="883182194752854976:876460797168432919T7D91B6E1B6A0EC918C539DBE0CE49B2586533FD8D3CBCA5A4257EEFBFB2FA74E0D8162C7CDB6F5D99975C41F0DE5579C97F59B8C9803CEFE65A55E5251EA1451:1543838209682|9714FC8DED484D840DF6B73B88F0DDA775598014E4A2679AA406F8BB13A6FA943CDF57DE16B65AD5794CCAA383BBEACADBB61F7EA01DF0DD7A891ECADF06E1DA">
+<input type="hidden" name="wdid" value="2088849555175403421">
+<input type="hidden" name="vc" value="" id="version_input">
+					<input type="hidden" name="button_next_0" value="true" id="hidden-next-page-id">
+
+<input type="hidden" name="button_post_chat_survey_0" value="X">
+
+<div id="bc-postchat-container">
+	<div id="bc-postchat-form-container">
+
+
+			
+
+			<div class="bc-help-message">
+				Help us improve, please complete the survey below.
+			</div>
+			<div class="bc-required-message">* Required</div>
+
+
+
+
+			<div id="bc-rate-container">
+
+
+				<div class="bc-input-container">
+					<div class="bc-input-label">Responsiveness:</div>
+					<div class="bc-starrating-container" id="rate-responsiveness"><img src="https://images.boldchat.com/images/floating/star-unselected.png" class="bc-star"><img src="https://images.boldchat.com/images/floating/star-unselected.png" class="bc-star"><img src="https://images.boldchat.com/images/floating/star-unselected.png" class="bc-star"><img src="https://images.boldchat.com/images/floating/star-unselected.png" class="bc-star"><img src="https://images.boldchat.com/images/floating/star-unselected.png" class="bc-star"><input type="hidden" name="record_SurveyResponsiveness"></div>
+					<div class="bc-clear"></div>
+				</div>
+
+
+
+				<div class="bc-input-container">
+					<div class="bc-input-label"> Professionalism:</div>
+					<div class="bc-starrating-container" id="rate-professionalism"><img src="https://images.boldchat.com/images/floating/star-unselected.png" class="bc-star"><img src="https://images.boldchat.com/images/floating/star-unselected.png" class="bc-star"><img src="https://images.boldchat.com/images/floating/star-unselected.png" class="bc-star"><img src="https://images.boldchat.com/images/floating/star-unselected.png" class="bc-star"><img src="https://images.boldchat.com/images/floating/star-unselected.png" class="bc-star"><input type="hidden" name="record_SurveyProfessionalism"></div>
+					<div class="bc-clear"></div>
+				</div>
+
+
+ 
+			</div>
+
+
+    
+    
+
+
+
+			<div class="bc-input-container bc-action-input-container">
+				<input type="submit" value="Done" id="bc-postchat-end-button">
+			</div>
+	</div>
+	<script type="text/javascript">
+		var ratingSelected = "".replace(/\s/g, "");
+		var ratingNotSelected = "".replace(/\s/g, "");
+		var bcConfig = bcConfig || {};
+		bcConfig.starRatings = [
+				{parent:"#rate-professionalism", config:{name:"record_SurveyProfessionalism", inactiveStarUrl: ratingNotSelected ? ratingNotSelected: undefined, activeStarUrl: ratingSelected ? ratingSelected: undefined}},
+				{parent:"#rate-responsiveness",config:{name:"record_SurveyResponsiveness", inactiveStarUrl: ratingNotSelected ? ratingNotSelected: undefined, activeStarUrl: ratingSelected ? ratingSelected: undefined}},
+				{parent:"#rate-knowledge", config:{name:"record_SurveyKnowledge", inactiveStarUrl: ratingNotSelected ? ratingNotSelected: undefined, activeStarUrl: ratingSelected ? ratingSelected: undefined}},
+				
+				{parent:"#rate-overall", config:{name:"record_SurveyOverall", inactiveStarUrl: ratingNotSelected ? ratingNotSelected: undefined, activeStarUrl: ratingSelected ? ratingSelected: undefined}}
+			];
+
+        function setNps(elemID) {
+			for	(i = 0; i < 11; i++)
+			{
+				var rad = document.getElementById("rad" + i);
+				rad.className = rad.className.replace(" bc-checked-radio", "");
+			}
+			document.getElementById(elemID).className += " bc-checked-radio";
+			document.getElementById("record_SurveyNps").value = elemID.substring(3);
+        }
+    </script>
+</div>
+<div id="bc-prompt-bottom-container">
+						<div id="bc-prompt-container" style="display: none;">
+							<div id="bc-prompt-inner-container">
+								<div id="bc-prompt-text"></div>
+								<div class="bc-input-container" style="display: none;">
+									<input type="email" id="prompt-text" name="prompt-text">
+								</div>
+								<div id="bc-prompt-input">
+									<input type="button" class="bc-prompt-button" id="bc-prompt-ok">
+									<input type="button" class="bc-prompt-button" id="bc-prompt-cancel">
+								</div>
+							</div>
+						</div>
+					</div>
+					<input type="hidden" name="ct" id="ct" value="0">
+<input type="hidden" name="cwdid" id="cwdid" value="3141863404716428525">
+<input type="hidden" name="cookie" id="cookie" value="">
+<input type="hidden" name="oicon" id="oicon" value="">
+<input type="hidden" name="resize" id="resize" value="true">
+<input type="hidden" name="unsecured" id="unsecured" value="pt&amp;record_SurveyProfessionalism&amp;button_post_chat_survey_0&amp;button_next_0&amp;record_SurveyResponsiveness&amp;vc">
+<input type="hidden" name="cid" id="cid" value="876460797168432919T7D91B6E1B6A0EC918C539DBE0CE49B2586533FD8D3CBCA5A4257EEFBFB2FA74E0D8162C7CDB6F5D99975C41F0DE5579C97F59B8C9803CEFE65A55E5251EA1451">
+<input type="hidden" name="vicon" id="vicon" value="">
+</form>
+			</div>
+		</div>
+
+<script>
+	if(document.getElementById('secured') || document.getElementById('localsecured')) {
+		document.forms['myform'].method='post';
+		document.forms['myform'].action += '?cid=' + bc.authID;
+	}
+	var hashIndex = document.location.href.indexOf('#'),
+		hash = hashIndex == -1 ? null : document.location.href.substring(hashIndex+1);
+	if(hash){
+		document.forms['myform'].action += '#' +
+			hash.replace(/[?&#]fs=([^&]+)/, '').replace(/[?&#]pw=([^&]+)/, '').replace(/[?&#]po=([^&]+)/, '');
+	}
+	(function(){
+		bcConfig.chatOptions = {
+			page: 'postchat',
+			cwdid: "3141863404716428525",
+			config: {
+				messagesOnTop: bcConfig.messagesOnTop
+			}
+		};
+	
+		var jq = document.createElement('script');
+		jq.type = 'text/javascript';
+		jq.src = 'loader.jsp?' + bc.authID;
+		document.getElementsByTagName('head')[0].appendChild(jq);
+	}());
+</script>
+	
+
+	<div style="display: none;"></div></body></html>
