@@ -610,6 +610,8 @@ body a:hover {
 #bc-prompt-inner-container {
 	margin: auto 0;
 	background: white;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
 }
 #bc-prompt-text {
 	font-size: 1em;
