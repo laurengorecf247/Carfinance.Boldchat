@@ -479,7 +479,7 @@ body a:hover {
 	box-sizing: border-box;		 /* Opera/IE 8+ */
 	-webkit-border-radius: 0px;
 	padding: 0;
-	border-color: #FFFFFF;
+	border-color: #E5E5E5;
 }
 .notFirefoxInAndroid .bc-input-container input[type="text"],
 .notFirefoxInAndroid .bc-input-container input[type="email"],
@@ -487,7 +487,7 @@ body a:hover {
 .notFirefoxInAndroid .bc-input-container select,
 .notFirefoxInAndroid .bc-input-container textarea {
 	border: none;	
-	border-bottom: 0.09em solid #FFFFFF;
+	border-bottom: 0.09em solid #E5E5E5;
 }
 .bc-input-container select {
 	line-height: 1.44em;
